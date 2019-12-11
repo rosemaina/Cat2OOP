@@ -1,5 +1,6 @@
 # CRUD APPLICATION - MOVIES
-This is a crud application made with JavaFX, RMI and, JDBC. The application can create, delete, view and edit movie titles.
+This is a crud application made with JavaFX, RMI and, JDBC. 
+The application can createn and delete BucketLists.
 
 ### Prerequisites
 * IntelliJ IDEA Ultimate
