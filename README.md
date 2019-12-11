@@ -13,3 +13,6 @@ This is a crud application made with JavaFX, RMI and, JDBC. The application can 
 
 ### Get Started 
 * [Get started with JavaFX 13 and IntelliJ](https://openjfx.io/openjfx-docs/#install-javafx)
+
+### AOOP LABS
+* [LABS](https://github.com/rosemaina/OOP2)
