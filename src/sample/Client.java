@@ -1,34 +1,40 @@
-package sample;
+/**
+ * <h1> Client Registry </h1>
+ * This program enables the client to call a remote object using the registry
+ * @author George Kimani
+ * @author Sankan Nabuyani
+ * @author Rose Maina
+ * @version v1.0
+ */
 
-import java.sql.*;
+package sample;
 import java.rmi.registry.Registry;
 import java.rmi.registry.LocateRegistry;
 
 public class Client {
+    // Private Constructor
     private Client() {}
-    public static void main(String[] args){
+
+    /** This is the main method used to access the registry
+     * @param args Unused
+     * @return None
+     */
+    public static void main(String[] args) {
+
         try {
-/**
- * getting the registry
- */
             Registry registry= LocateRegistry.getRegistry(null);
 
-/**
- *
- *  looking up the registry for the remote object
- */
-            Hello stub= (Hello) registry.lookup("Hello");
-
-/**
- *
- *  calling the remote method using the obtainned object;
- */
+            Interface stub = (Interface) registry.lookup("Interface");
             stub.animation();
-            System.out.println("remote method invoked");
 
+            /**
+             * Catching the Exception
+             * Prints out an error message when an exception is caught
+             * @exception Exception e  The error you get
+             */
         } catch (Exception e) {
             System.err.println("Client exception: " + e.toString());
             e.printStackTrace();
         }
-
-    }}
+    }
+}
