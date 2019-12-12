@@ -1,4 +1,4 @@
-# CRUD APPLICATION - MOVIES
+# CRUD APPLICATION
 This is a crud application made with JavaFX, RMI and, JDBC. 
 The application can createn and delete BucketLists.
 
